@@ -1,5 +1,13 @@
 package com.petkoivanov.carCatalog.models.dtos;
 
-public class ModelDto {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class ModelDto {
+  private String modelName;
+  private BrandDto brand;
 }

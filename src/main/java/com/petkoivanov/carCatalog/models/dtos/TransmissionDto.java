@@ -1,5 +1,12 @@
 package com.petkoivanov.carCatalog.models.dtos;
 
-public class TransmissionDto {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class TransmissionDto {
+  private String transmissionName;
 }

@@ -1,5 +1,12 @@
 package com.petkoivanov.carCatalog.models.dtos;
 
-public class FuelTypeDto {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class FuelTypeDto {
+  private String fuelType;
 }
