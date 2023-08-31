@@ -12,7 +12,7 @@
 	<artifactId>carCatalog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>carCatalog</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Car Catalog project</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -20,10 +20,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
