@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 @Repository
 public interface BrandRepository extends JpaRepository<Integer , Brand> {
-  Optional<Brand> finByName(String brandName);
+  Optional<Brand> findByName(String brandName);
 }
