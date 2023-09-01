@@ -12,7 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import java.sql.Date;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "cars")
@@ -34,7 +34,7 @@ public class Car {
   private double price;
 
   @Column(name = "reg_date")
-  private Date registrationDate;
+  private LocalDate registrationDate;
 
   @OneToOne
   @JoinColumn(name = "transmission_id")
@@ -45,7 +45,7 @@ public class Car {
   private FuelType fuelType;
 
   public Car(String vinNumber , Model model ,
-             double price , Date registrationDate ,
+             double price , LocalDate registrationDate ,
              Transmission transmission , FuelType fuelType){
     this.vinNumber = vinNumber;
     this.model = model;
