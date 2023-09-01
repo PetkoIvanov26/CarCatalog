@@ -8,19 +8,19 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 @Repository
-public interface CarRepository extends JpaRepository<Integer , Car> {
+public interface CarRepository extends JpaRepository<Car , Integer> {
   Optional<Car> findByVinNumber(String vinNumber);
-  Optional<Car> findByRegDate(LocalDate regDate);
+  Optional<Car> findByRegistrationDate(LocalDate regDate);
   List<Car> findAllByModelId(int id);
   List<Car> findAllByFuelTypeId(int id);
   List<Car> findAllByOrderByPriceAsc();
   List<Car> findAllByOrderByPriceDesc();
   List<Car> findAllByTransmissionId(int id);
   List<Car> findAllByTransmissionIdAndModelId(int transmissionId , int modelId);
-  List<Car> findAllByTransmissionIdAndFuelType(int transmissionId , int fuelTypeId);
-  List<Car> findAllByModelIdAndFuelType(int modelId , int fuelTypeId);
+  List<Car> findAllByTransmissionIdAndFuelTypeId(int transmissionId , int fuelTypeId);
+  List<Car> findAllByModelIdAndFuelTypeId(int modelId , int fuelTypeId);
   List<Car> findByModelIdAndFuelTypeIdAndTransmissionIdAndPriceGreaterThan(int modelId , double price , int fuelType , int transmissionId);
   List<Car> findByModelIdAndFuelTypeIdAndTransmissionIdAndPriceLessThan(int modelId , double price , int fuelType , int transmissionId);
-  List<Car> findByModelIdAndFuelTypeIdAndTransmissionIdAndOrderByPriceAsc(int modelId , int fuelId , int transmissionId);
-  List<Car> findByModelIdAndFuelTypeIdAndTransmissionIdAndOrderByPriceDesc(int modelId , int fuelId , int transmissionId);
+  List<Car> findByModelIdAndFuelTypeIdAndTransmissionIdOrderByPriceAsc(int modelId , int fuelId , int transmissionId);
+  List<Car> findByModelIdAndFuelTypeIdAndTransmissionIdOrderByPriceDesc(int modelId , int fuelId , int transmissionId);
 }
