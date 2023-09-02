@@ -32,7 +32,7 @@ public class TransmissionService {
   }
 
   public Transmission addTransmission(TransmissionRequest transmissionRequest){
-    log.info("An attempt to add new transmission to database");
+    log.info("An attempt to save new transmission to database");
 
     transmissionValidation(transmissionRequest);
 
@@ -55,7 +55,7 @@ public class TransmissionService {
     }));
   }
 
-  public TransmissionDto getTransmissionByName(String name){
+  public TransmissionDto getTransmissionDtoByName(String name){
     log.info(String.format("An attempt to extract transmission with name %s from database" , name));
 
     return transmissionMapper.mapTransmissionToTransmissionDto(transmissionRepository.findByName(name).orElseThrow(() -> {
@@ -69,6 +69,16 @@ public class TransmissionService {
     log.info(String.format("An attempt to extract transmission with id %d from database" , id));
 
     return transmissionRepository.findById(id).orElseThrow(() -> {
+      log.error(String.format("Exception caught: %s",TRANSMISSION_NOT_FOUND_MESSAGE));
+
+      throw new EntityNotFoundException(TRANSMISSION_NOT_FOUND_MESSAGE);
+    });
+  }
+
+  public Transmission getTransmissionByName(String name){
+    log.info(String.format("An attempt to extract transmission with name %s from database" , name));
+
+    return transmissionRepository.findByName(name).orElseThrow(() -> {
       log.error(String.format("Exception caught: %s",TRANSMISSION_NOT_FOUND_MESSAGE));
 
       throw new EntityNotFoundException(TRANSMISSION_NOT_FOUND_MESSAGE);

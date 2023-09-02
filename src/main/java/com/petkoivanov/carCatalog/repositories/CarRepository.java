@@ -15,10 +15,13 @@ public interface CarRepository extends JpaRepository<Car , Integer> {
   List<Car> findAllByFuelTypeId(int id);
   List<Car> findAllByOrderByPriceAsc();
   List<Car> findAllByOrderByPriceDesc();
+  List<Car> findAlLByPriceGreaterThan(double price);
+  List<Car> findAllByPriceLessThan(double price);
   List<Car> findAllByTransmissionId(int id);
   List<Car> findAllByTransmissionIdAndModelId(int transmissionId , int modelId);
   List<Car> findAllByTransmissionIdAndFuelTypeId(int transmissionId , int fuelTypeId);
   List<Car> findAllByModelIdAndFuelTypeId(int modelId , int fuelTypeId);
+  List<Car> findAllByModelIdAndFuelTypeIdAndTransmissionId(int modelId,int fuelTypeId,int transmissionId);
   List<Car> findByModelIdAndFuelTypeIdAndTransmissionIdAndPriceGreaterThan(int modelId , double price , int fuelType , int transmissionId);
   List<Car> findByModelIdAndFuelTypeIdAndTransmissionIdAndPriceLessThan(int modelId , double price , int fuelType , int transmissionId);
   List<Car> findByModelIdAndFuelTypeIdAndTransmissionIdOrderByPriceAsc(int modelId , int fuelId , int transmissionId);

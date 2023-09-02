@@ -75,6 +75,16 @@ public class BrandService {
     });
   }
 
+  public Brand getBrandByName(String name){
+    log.info(String.format("An attempt to extract brand with name %s from database",name));
+
+    return brandRepository.findByName(name).orElseThrow(() -> {
+      log.error(String.format("Exception caught: %s",BRAND_NOT_FOUND_MESSAGE));
+
+      throw new EntityNotFoundException(BRAND_NOT_FOUND_MESSAGE);
+    });
+  }
+
   public BrandDto updateBrand(BrandRequest brandRequest , int brandId){
     BrandDto brandDto = getBrandDtoById(brandId);
 

@@ -84,6 +84,16 @@ public class ModelService {
     });
   }
 
+  public Model getModelByName(String name){
+    log.info(String.format("An attempt to extract model with name %s from database",name));
+
+    return modelRepository.findByName(name).orElseThrow(() -> {
+      log.error(String.format("Exception caught: %s", MODEL_NOT_FOUND_MESSAGE));
+
+      throw new EntityNotFoundException(MODEL_NOT_FOUND_MESSAGE);
+    });
+  }
+
   public ModelDto updateModel(ModelRequest modelRequest , int id){
     ModelDto modelDto = getModelDtoById(id);
 

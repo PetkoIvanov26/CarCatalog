@@ -75,6 +75,16 @@ public class FuelTypeService {
     });
   }
 
+  public FuelType getFuelTypeByName(String name){
+    log.info(String.format("An attempt to extract fuel type by name %s from database", name));
+
+    return fuelTypeRepository.findByName(name).orElseThrow(() -> {
+      log.error(String.format("Exception caught: %s",FUEL_TYPE_NOT_FOUND_MESSAGE));
+
+      throw new EntityNotFoundException(FUEL_TYPE_NOT_FOUND_MESSAGE);
+    });
+  }
+
   public FuelTypeDto updateFuelType(FuelTypeRequest fuelTypeRequest , int fuelTypeId){
     FuelTypeDto fuelTypeDto = getFuelTypeDtoById(fuelTypeId);
 
