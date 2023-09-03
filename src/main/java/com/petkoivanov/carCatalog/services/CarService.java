@@ -196,11 +196,44 @@ public class CarService {
       return carMapper.mapCarToCarDtoList(carRepository.findAll());
   }
 
+  public CarDto updateCar(CarRequest carRequest , int id){
+    CarDto carDto = getCarDtoById(id);
+
+    log.info(String.format("An attempt to update car with id %d",id));
+
+    carRepository.save(new Car(id,carRequest.getVinNumber(),
+                               modelService.getModelById(carRequest.getModelId()),
+                               carRequest.getPrice(),carRequest.getRegistrationDate(),
+                               transmissionService.getTransmissionById(carRequest.getTransmissionId()),
+                               fuelTypeService.getFuelTypeById(carRequest.getFuelTypeId())));
+
+    return carDto;
+  }
+
+  public CarDto deleteCar(int id){
+    CarDto carDto = getCarDtoById(id);
+
+    log.info(String.format("An attempt to delete car with id %d",id));
+
+    carRepository.deleteById(id);
+    return carDto;
+  }
+
   private void carValidation(CarRequest carRequest){
     carRepository.findByVinNumber(carRequest.getVinNumber()).ifPresent(car -> {
       log.error(String.format("Exception caught: %s",CAR_VIN_ALREADY_EXISTS_MESSAGE));
 
       throw new EntityAlreadyExistsException(CAR_VIN_ALREADY_EXISTS_MESSAGE);
     });
+  }
+
+  public CarDto getCarDtoById(int id){
+    log.info(String.format("An attempt to extract a car with id %d from database" , id));
+
+    return carMapper.mapCarToCarDto(carRepository.findById(id).orElseThrow(() -> {
+      log.error(String.format("Exception caught: %s",CAR_NOT_FOUND_MESSAGE));
+
+      throw new EntityNotFoundException(CAR_NOT_FOUND_MESSAGE);
+    }));
   }
 }
