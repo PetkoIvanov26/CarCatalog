@@ -21,4 +21,10 @@ public final class ExceptionMessages {
   public static final String MODEL_NOT_FOUND_MESSAGE = "No such model was found in the database";
   public static final String TRANSMISSION_NOT_FOUND_MESSAGE = "No such transmission was found in the database";
 
+  /**
+   * Global exception messages
+   */
+
+  public static final String GLOBAL_EXCEPTION = "Something went wrong...";
+  public final static String CAUGHT_EXCEPTION = "An exception has been caught";
 }
