@@ -7,9 +7,8 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Positive;
-import java.time.LocalDate;
+import java.sql.Date;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -27,9 +26,9 @@ public class CarRequest {
   @NotNull(message = "Price can't be empty")
   private double price;
 
-  @DateTimeFormat(pattern = "dd-MM-yyyy")
+  @DateTimeFormat(pattern = "yyyy-MM-dd")
   @NotNull(message = "registration date can't be empty")
-  private LocalDate registrationDate;
+  private Date registrationDate;
 
   @Positive(message = "Transmission id cant be a negative number")
   @NotNull(message = "Transmission can't be empty")

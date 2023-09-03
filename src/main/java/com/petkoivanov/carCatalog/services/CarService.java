@@ -15,6 +15,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Date;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -45,7 +46,7 @@ public class CarService {
 
   public Car addCar(CarRequest carRequest){
     log.info("An attempt to save new car to the database");
-
+    Date regDate = carRequest.getRegistrationDate();
     carValidation(carRequest);
 
     return carRepository.save(new Car(carRequest.getVinNumber(),
