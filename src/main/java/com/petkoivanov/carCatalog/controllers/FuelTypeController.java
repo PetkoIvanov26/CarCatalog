@@ -58,7 +58,7 @@ public class FuelTypeController {
     return ResponseEntity.ok(fuelTypes);
   }
 
-  @GetMapping(FUEL_TYPES_PATH)
+  @GetMapping(value=FUEL_TYPES_PATH , params = "fuelTypeName")
   public ResponseEntity<FuelTypeDto> getFuelTypeByName(@RequestParam String fuelTypeName){
     log.info(String.format("Fuel type with name %s was requested from database", fuelTypeName));
     FuelTypeDto fuelType = fuelTypeService.getFuelTypeDtoByName(fuelTypeName);

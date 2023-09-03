@@ -58,7 +58,7 @@ public class TransmissionController {
     return ResponseEntity.ok(transmissions);
   }
 
-  @GetMapping(TRANSMISSIONS_PATH)
+  @GetMapping(value = TRANSMISSIONS_PATH , params = "transmissionName")
   public ResponseEntity<TransmissionDto> getTransmissionByName(@RequestParam String transmissionName){
     log.info(String.format("Transmission with name %s was requested from database" , transmissionName));
     TransmissionDto transmission = transmissionService.getTransmissionDtoByName(transmissionName);

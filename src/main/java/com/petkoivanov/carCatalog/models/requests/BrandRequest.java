@@ -12,9 +12,6 @@ import javax.validation.constraints.Pattern;
 @NoArgsConstructor
 @Data
 public class BrandRequest {
-  @Pattern(regexp = "^[A-Z][A-Za-z-, .]*$]",
-           message = "The brand name must with capital letter and " +
-                     "should not contain number or special signs")
   @NotNull(message = "The brand name must cant be empty")
   @NotBlank(message = "The brand name can't be blank")
   private String brandName;
