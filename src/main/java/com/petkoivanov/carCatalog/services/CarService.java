@@ -56,12 +56,6 @@ public class CarService {
                                       fuelTypeService.getFuelTypeById(carRequest.getFuelTypeId())));
   }
 
-  public List<CarDto> getAllCars(){
-    log.info("An attempt to extract all cars from database");
-
-    return carMapper.mapCarToCarDtoList(carRepository.findAll());
-  }
-
   public CarDto getCarByVinNumber(String vinNumber){
     log.info(String.format("An attempt to extract car with vin number %s from database",vinNumber));
 
@@ -82,28 +76,35 @@ public class CarService {
     }));
   }
 
+  public CarDto getCarDtoById(int id){
+    log.info(String.format("An attempt to extract a car with id %d from database" , id));
+
+    return carMapper.mapCarToCarDto(carRepository.findById(id).orElseThrow(() -> {
+      log.error(String.format("Exception caught: %s",CAR_NOT_FOUND_MESSAGE));
+
+      throw new EntityNotFoundException(CAR_NOT_FOUND_MESSAGE);
+    }));
+  }
+
   public List<CarDto> getAllByFilter(String modelName , String transmissionName , String fuelTypeName , double price ,
                                      boolean isAsc , boolean isDesc  , boolean isGreaterThan , boolean isLowerThan){
 
       if (modelName != null && transmissionName == null && fuelTypeName == null &&
           price == 0.0 && !isAsc && !isDesc && !isGreaterThan && !isLowerThan){
 
-        Model model = modelService.getModelByName(modelName);
-        return carMapper.mapCarToCarDtoList(carRepository.findAllByModelId(model.getId()));
+        return getAllByModelId(modelName);
       }
 
       if(modelName == null && transmissionName != null && fuelTypeName == null && price == 0.0 && !isAsc &&
          !isDesc && !isGreaterThan && !isLowerThan){
 
-        Transmission transmission = transmissionService.getTransmissionByName(transmissionName);
-        return carMapper.mapCarToCarDtoList(carRepository.findAllByTransmissionId(transmission.getId()));
+        return getAllByTransmissionId(transmissionName);
       }
 
       if(modelName == null && transmissionName == null && fuelTypeName != null && price == 0.0 && !isAsc &&
          !isDesc && !isGreaterThan && !isLowerThan){
 
-        FuelType fuelType = fuelTypeService.getFuelTypeByName(fuelTypeName);
-        return carMapper.mapCarToCarDtoList(carRepository.findAllByFuelTypeId(fuelType.getId()));
+        return getAllByFuelTypeId(fuelTypeName);
       }
       if(modelName == null && transmissionName == null && fuelTypeName == null &&
          price == 0.0 && isAsc && !isDesc && !isGreaterThan && !isLowerThan){
@@ -112,7 +113,7 @@ public class CarService {
       }
 
       if(modelName == null && transmissionName == null && fuelTypeName == null &&
-         price == 0.0 && !isAsc && isDesc && !isGreaterThan && !isLowerThan){
+         price == 0.0 && !isAsc && !isDesc && !isGreaterThan && !isLowerThan){
 
         return carMapper.mapCarToCarDtoList(carRepository.findAllByOrderByPriceDesc());
       }
@@ -127,47 +128,30 @@ public class CarService {
         return carMapper.mapCarToCarDtoList(carRepository.findAllByPriceLessThan(price));
       }
       if(modelName != null && transmissionName != null && fuelTypeName == null && price == 0.0 &&
-         !isAsc && isDesc && !isGreaterThan && !isLowerThan){
-
-        Model model = modelService.getModelByName(modelName);
-        Transmission transmission = transmissionService.getTransmissionByName(transmissionName);
-
-        return carMapper.mapCarToCarDtoList(carRepository.findAllByTransmissionIdAndModelId(model.getId(),transmission.getId()));
+         !isAsc && !isDesc && !isGreaterThan && !isLowerThan){
+        return getAllByTransmissionIdAndModelId(transmissionName , modelName);
       }
       if(modelName == null && transmissionName != null && fuelTypeName != null && price == 0.0 &&
-         !isAsc && isDesc && !isGreaterThan && !isLowerThan){
-        FuelType fuelType = fuelTypeService.getFuelTypeByName(fuelTypeName);
-        Transmission transmission = transmissionService.getTransmissionByName(transmissionName);
+         !isAsc && !isDesc && !isGreaterThan && !isLowerThan){
 
-        return carMapper.mapCarToCarDtoList(carRepository.findAllByTransmissionIdAndFuelTypeId(fuelType.getId(),transmission.getId()));
+        return getAllByTransmissionIdAndFuelTypeId(transmissionName , fuelTypeName);
       }
       if(modelName != null && transmissionName == null && fuelTypeName != null && price == 0.0 &&
-         !isAsc && isDesc && !isGreaterThan && !isLowerThan){
+         !isAsc && !isDesc && !isGreaterThan && !isLowerThan){
 
-        Model model = modelService.getModelByName(modelName);
-        FuelType fuelType = fuelTypeService.getFuelTypeByName(fuelTypeName);
-
-        return carMapper.mapCarToCarDtoList(carRepository.findAllByModelIdAndFuelTypeId(model.getId(),fuelType.getId()));
+        return getAllByModelIdAndFuelTypeId(modelName , fuelTypeName);
       }
       if(modelName != null && transmissionName != null && fuelTypeName != null && price == 0.0 &&
-         !isAsc && isDesc && !isGreaterThan && !isLowerThan){
+         !isAsc && !isDesc && !isGreaterThan && !isLowerThan){
 
-        Model model = modelService.getModelByName(modelName);
-        FuelType fuelType = fuelTypeService.getFuelTypeByName(fuelTypeName);
-        Transmission transmission = transmissionService.getTransmissionByName(transmissionName);
-
-        return carMapper.mapCarToCarDtoList(carRepository.findAllByModelIdAndFuelTypeIdAndTransmissionId(model.getId(),fuelType.getId(),transmission.getId()));
+        return getAllByModelIdAndTransmissionIdAndFuelTypeId(modelName , transmissionName , fuelTypeName);
       }
       if(modelName != null && transmissionName != null && fuelTypeName != null && price != 0.0 &&
          !isAsc && !isDesc && isGreaterThan && !isLowerThan){
 
-        Model model = modelService.getModelByName(modelName);
-        FuelType fuelType = fuelTypeService.getFuelTypeByName(fuelTypeName);
-        Transmission transmission = transmissionService.getTransmissionByName(transmissionName);
-
-        return carMapper.mapCarToCarDtoList(carRepository.findByModelIdAndFuelTypeIdAndTransmissionIdAndPriceGreaterThan(model.getId(),price,fuelType.getId(),transmission.getId()));
+        return getByModelIdAndFuelTypeIdAndTransmissionIdAndPriceGreaterThan(modelName , transmissionName , fuelTypeName , price);
       }
-      if(modelName != null && transmissionName != null && fuelTypeName != null && price > 0.0 &&
+      if(modelName != null && transmissionName != null && fuelTypeName != null && price != 0.0 &&
          !isAsc && !isDesc && !isGreaterThan && isLowerThan){
 
         Model model = modelService.getModelByName(modelName);
@@ -220,6 +204,60 @@ public class CarService {
     return carDto;
   }
 
+  private List<CarDto> getAllByModelId(String modelName){
+    Model model = modelService.getModelByName(modelName);
+
+    return carMapper.mapCarToCarDtoList(carRepository.findAllByModelId(model.getId()));
+  }
+
+  private List<CarDto> getAllByTransmissionId(String transmissionName){
+    Transmission transmission = transmissionService.getTransmissionByName(transmissionName);
+
+    return carMapper.mapCarToCarDtoList(carRepository.findAllByTransmissionId(transmission.getId()));
+  }
+
+  private List<CarDto> getAllByFuelTypeId(String fuelTypeName){
+    FuelType fuelType = fuelTypeService.getFuelTypeByName(fuelTypeName);
+
+    return carMapper.mapCarToCarDtoList(carRepository.findAllByFuelTypeId(fuelType.getId()));
+  }
+
+  private List<CarDto> getAllByTransmissionIdAndModelId(String transmissionName , String modelName){
+    Model model = modelService.getModelByName(modelName);
+    Transmission transmission = transmissionService.getTransmissionByName(transmissionName);
+
+    return carMapper.mapCarToCarDtoList(carRepository.findAllByModelIdAndTransmissionId(model.getId(), transmission.getId()));
+  }
+
+  private List<CarDto> getAllByTransmissionIdAndFuelTypeId(String transmissionName , String fuelTypeName){
+    FuelType fuelType = fuelTypeService.getFuelTypeByName(fuelTypeName);
+    Transmission transmission = transmissionService.getTransmissionByName(transmissionName);
+
+    return carMapper.mapCarToCarDtoList(carRepository.findAllByTransmissionIdAndFuelTypeId(fuelType.getId(),transmission.getId()));
+  }
+
+  private List<CarDto> getAllByModelIdAndFuelTypeId(String modelName , String fuelTypeName){
+    Model model = modelService.getModelByName(modelName);
+    FuelType fuelType = fuelTypeService.getFuelTypeByName(fuelTypeName);
+
+    return carMapper.mapCarToCarDtoList(carRepository.findAllByModelIdAndFuelTypeId(model.getId(),fuelType.getId()));
+  }
+
+  private List<CarDto> getAllByModelIdAndTransmissionIdAndFuelTypeId(String modelName , String transmissionName , String fuelTypeName){
+    Model model = modelService.getModelByName(modelName);
+    FuelType fuelType = fuelTypeService.getFuelTypeByName(fuelTypeName);
+    Transmission transmission = transmissionService.getTransmissionByName(transmissionName);
+
+    return carMapper.mapCarToCarDtoList(carRepository.findAllByModelIdAndFuelTypeIdAndTransmissionId(model.getId(),fuelType.getId(),transmission.getId()));
+  }
+
+  private List<CarDto> getByModelIdAndFuelTypeIdAndTransmissionIdAndPriceGreaterThan(String modelName , String transmissionName , String fuelTypeName , double price){
+    Model model = modelService.getModelByName(modelName);
+    FuelType fuelType = fuelTypeService.getFuelTypeByName(fuelTypeName);
+    Transmission transmission = transmissionService.getTransmissionByName(transmissionName);
+
+    return carMapper.mapCarToCarDtoList(carRepository.findByModelIdAndFuelTypeIdAndTransmissionIdAndPriceGreaterThan(model.getId(),price,fuelType.getId(),transmission.getId()));
+  }
   private void carValidation(CarRequest carRequest){
     carRepository.findByVinNumber(carRequest.getVinNumber()).ifPresent(car -> {
       log.error(String.format("Exception caught: %s",CAR_VIN_ALREADY_EXISTS_MESSAGE));
@@ -228,13 +266,4 @@ public class CarService {
     });
   }
 
-  public CarDto getCarDtoById(int id){
-    log.info(String.format("An attempt to extract a car with id %d from database" , id));
-
-    return carMapper.mapCarToCarDto(carRepository.findById(id).orElseThrow(() -> {
-      log.error(String.format("Exception caught: %s",CAR_NOT_FOUND_MESSAGE));
-
-      throw new EntityNotFoundException(CAR_NOT_FOUND_MESSAGE);
-    }));
-  }
 }

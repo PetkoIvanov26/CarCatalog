@@ -352,3 +352,1433 @@ java.lang.IllegalStateException: Optional double parameter 'price' is present bu
 03-09-2023 18:29:51 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy -Closing JPA EntityManagerFactory for persistence unit 'default'
 03-09-2023 18:29:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown initiated...
 03-09-2023 18:29:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown completed.
+03-09-2023 19:39:19 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarting -Starting CarCatalogApplication using Java 18.0.2.1 on DESKTOP-IE98DU3 with PID 9044 (D:\Programming\Portfolio projects\carCatalog\target\classes started by MyPC in D:\Programming\Portfolio projects\carCatalog)
+03-09-2023 19:39:19 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStartupProfileInfo -The following 1 profile is active: "postgre"
+03-09-2023 19:39:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-09-2023 19:39:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+03-09-2023 19:39:20 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$aca1d25d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+03-09-2023 19:39:21 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+03-09-2023 19:39:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize -Tomcat initialized with port(s): 8081 (http)
+03-09-2023 19:39:21 [main] INFO  o.a.catalina.core.StandardService.log -Starting service [Tomcat]
+03-09-2023 19:39:21 [main] INFO  o.a.catalina.core.StandardEngine.log -Starting Servlet engine: [Apache Tomcat/9.0.79]
+03-09-2023 19:39:21 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring embedded WebApplicationContext
+03-09-2023 19:39:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext -Root WebApplicationContext: initialization completed in 1862 ms
+03-09-2023 19:39:21 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation -HHH000204: Processing PersistenceUnitInfo [name: default]
+03-09-2023 19:39:21 [main] INFO  org.hibernate.Version.logVersion -HHH000412: Hibernate ORM core version 5.6.15.Final
+03-09-2023 19:39:22 [main] INFO  o.h.annotations.common.Version.<clinit> -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03-09-2023 19:39:22 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Starting...
+03-09-2023 19:39:22 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Start completed.
+03-09-2023 19:39:22 [main] INFO  org.hibernate.dialect.Dialect.<init> -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+03-09-2023 19:39:23 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-09-2023 19:39:23 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory -Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 19:39:23 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-09-2023 19:39:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start -Tomcat started on port(s): 8081 (http) with context path ''
+03-09-2023 19:39:24 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarted -Started CarCatalogApplication in 5.367 seconds (JVM running for 5.875)
+03-09-2023 19:39:51 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring DispatcherServlet 'dispatcherServlet'
+03-09-2023 19:39:51 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Initializing Servlet 'dispatcherServlet'
+03-09-2023 19:39:51 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Completed initialization in 1 ms
+03-09-2023 19:39:51 [http-nio-8081-exec-2] INFO  c.p.c.controllers.BrandController.addBrand -A request for brand to be added has been submitted
+03-09-2023 19:39:51 [http-nio-8081-exec-2] INFO  c.p.carCatalog.services.BrandService.addBrand -An attempt to save a brand in the database
+03-09-2023 19:40:02 [http-nio-8081-exec-3] INFO  c.p.c.controllers.BrandController.addBrand -A request for brand to be added has been submitted
+03-09-2023 19:40:02 [http-nio-8081-exec-3] INFO  c.p.carCatalog.services.BrandService.addBrand -An attempt to save a brand in the database
+03-09-2023 19:40:12 [http-nio-8081-exec-4] INFO  c.p.c.controllers.ModelController.addModel -A request for a model to be added was submitted
+03-09-2023 19:40:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.services.ModelService.addModel -An attempt to save new model in database
+03-09-2023 19:40:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.services.BrandService.getBrandById -An attempt to extract brand with id 1 from database
+03-09-2023 19:40:17 [http-nio-8081-exec-5] INFO  c.p.c.controllers.ModelController.addModel -A request for a model to be added was submitted
+03-09-2023 19:40:17 [http-nio-8081-exec-5] INFO  c.p.carCatalog.services.ModelService.addModel -An attempt to save new model in database
+03-09-2023 19:40:17 [http-nio-8081-exec-5] INFO  c.p.carCatalog.services.BrandService.getBrandById -An attempt to extract brand with id 1 from database
+03-09-2023 19:40:24 [http-nio-8081-exec-6] INFO  c.p.c.controllers.ModelController.addModel -A request for a model to be added was submitted
+03-09-2023 19:40:24 [http-nio-8081-exec-6] INFO  c.p.carCatalog.services.ModelService.addModel -An attempt to save new model in database
+03-09-2023 19:40:24 [http-nio-8081-exec-6] INFO  c.p.carCatalog.services.BrandService.getBrandById -An attempt to extract brand with id 2 from database
+03-09-2023 19:40:28 [http-nio-8081-exec-7] INFO  c.p.c.controllers.ModelController.addModel -A request for a model to be added was submitted
+03-09-2023 19:40:28 [http-nio-8081-exec-7] INFO  c.p.carCatalog.services.ModelService.addModel -An attempt to save new model in database
+03-09-2023 19:40:28 [http-nio-8081-exec-7] INFO  c.p.carCatalog.services.BrandService.getBrandById -An attempt to extract brand with id 2 from database
+03-09-2023 19:40:38 [http-nio-8081-exec-8] INFO  c.p.c.controllers.ModelController.addModel -A request for a model to be added was submitted
+03-09-2023 19:40:38 [http-nio-8081-exec-8] INFO  c.p.carCatalog.services.ModelService.addModel -An attempt to save new model in database
+03-09-2023 19:40:38 [http-nio-8081-exec-8] INFO  c.p.carCatalog.services.BrandService.getBrandById -An attempt to extract brand with id 3 from database
+03-09-2023 19:40:41 [http-nio-8081-exec-9] INFO  c.p.c.controllers.ModelController.addModel -A request for a model to be added was submitted
+03-09-2023 19:40:41 [http-nio-8081-exec-9] INFO  c.p.carCatalog.services.ModelService.addModel -An attempt to save new model in database
+03-09-2023 19:40:41 [http-nio-8081-exec-9] INFO  c.p.carCatalog.services.BrandService.getBrandById -An attempt to extract brand with id 3 from database
+03-09-2023 19:40:52 [http-nio-8081-exec-10] INFO  c.p.c.controllers.FuelTypeController.addFuelType -A request for a fuel type to be added has been submitted
+03-09-2023 19:40:52 [http-nio-8081-exec-10] INFO  c.p.c.services.FuelTypeService.addFuelType -An attempt to save a new fuel type in the database
+03-09-2023 19:41:10 [http-nio-8081-exec-1] INFO  c.p.c.controllers.FuelTypeController.addFuelType -A request for a fuel type to be added has been submitted
+03-09-2023 19:41:10 [http-nio-8081-exec-1] INFO  c.p.c.services.FuelTypeService.addFuelType -An attempt to save a new fuel type in the database
+03-09-2023 19:41:19 [http-nio-8081-exec-2] INFO  c.p.c.c.TransmissionController.addTransmission -A request for a transmission to be added has been submitted
+03-09-2023 19:41:19 [http-nio-8081-exec-2] INFO  c.p.c.services.TransmissionService.addTransmission -An attempt to save new transmission to database
+03-09-2023 19:41:27 [http-nio-8081-exec-3] INFO  c.p.c.c.TransmissionController.addTransmission -A request for a transmission to be added has been submitted
+03-09-2023 19:41:27 [http-nio-8081-exec-3] INFO  c.p.c.services.TransmissionService.addTransmission -An attempt to save new transmission to database
+03-09-2023 19:41:36 [http-nio-8081-exec-4] INFO  c.p.c.services.TransmissionService.getTransmissionDtoById -An attempt to extract transmission with id 3 from database
+03-09-2023 19:41:36 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Electric is being mapped to dto
+03-09-2023 19:41:36 [http-nio-8081-exec-4] INFO  c.p.c.services.TransmissionService.deleteTransmission -Transmission with id 3 was deleted
+03-09-2023 19:41:36 [http-nio-8081-exec-4] INFO  c.p.c.c.TransmissionController.deleteTransmission -Transmission with id 3 was deleted
+03-09-2023 19:41:57 [http-nio-8081-exec-5] INFO  c.p.c.c.TransmissionController.addTransmission -A request for a transmission to be added has been submitted
+03-09-2023 19:41:57 [http-nio-8081-exec-5] INFO  c.p.c.services.TransmissionService.addTransmission -An attempt to save new transmission to database
+03-09-2023 19:42:26 [http-nio-8081-exec-6] INFO  c.p.c.controllers.CarController.addCar -A request for car to be added has been submitted
+03-09-2023 19:42:26 [http-nio-8081-exec-6] INFO  c.p.carCatalog.services.CarService.addCar -An attempt to save new car to the database
+03-09-2023 19:42:26 [http-nio-8081-exec-6] INFO  c.p.carCatalog.services.ModelService.getModelById -An attempt to extract model with id  2 from database
+03-09-2023 19:42:26 [http-nio-8081-exec-6] INFO  c.p.c.services.TransmissionService.getTransmissionById -An attempt to extract transmission with id 2 from database
+03-09-2023 19:42:26 [http-nio-8081-exec-6] INFO  c.p.c.services.FuelTypeService.getFuelTypeById -An attempt to extract fuel type by id 1 from database
+03-09-2023 19:42:35 [http-nio-8081-exec-7] INFO  c.p.c.controllers.CarController.addCar -A request for car to be added has been submitted
+03-09-2023 19:42:35 [http-nio-8081-exec-7] INFO  c.p.carCatalog.services.CarService.addCar -An attempt to save new car to the database
+03-09-2023 19:42:35 [http-nio-8081-exec-7] ERROR c.p.carCatalog.services.CarService.lambda$carValidation$2 -Exception caught: Car's vin number already exists
+03-09-2023 19:42:35 [http-nio-8081-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet].log -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.petkoivanov.carCatalog.exceptions.EntityAlreadyExistsException: Car's vin number already exists] with root cause
+com.petkoivanov.carCatalog.exceptions.EntityAlreadyExistsException: Car's vin number already exists
+	at com.petkoivanov.carCatalog.services.CarService.lambda$carValidation$2(CarService.java:227)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at com.petkoivanov.carCatalog.services.CarService.carValidation(CarService.java:224)
+	at com.petkoivanov.carCatalog.services.CarService.addCar(CarService.java:50)
+	at com.petkoivanov.carCatalog.controllers.CarController.addCar(CarController.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+03-09-2023 19:42:41 [http-nio-8081-exec-9] INFO  c.p.c.controllers.CarController.addCar -A request for car to be added has been submitted
+03-09-2023 19:42:41 [http-nio-8081-exec-9] INFO  c.p.carCatalog.services.CarService.addCar -An attempt to save new car to the database
+03-09-2023 19:42:41 [http-nio-8081-exec-9] INFO  c.p.carCatalog.services.ModelService.getModelById -An attempt to extract model with id  3 from database
+03-09-2023 19:42:41 [http-nio-8081-exec-9] INFO  c.p.c.services.TransmissionService.getTransmissionById -An attempt to extract transmission with id 2 from database
+03-09-2023 19:42:41 [http-nio-8081-exec-9] INFO  c.p.c.services.FuelTypeService.getFuelTypeById -An attempt to extract fuel type by id 1 from database
+03-09-2023 19:43:01 [http-nio-8081-exec-10] INFO  c.p.c.controllers.CarController.addCar -A request for car to be added has been submitted
+03-09-2023 19:43:01 [http-nio-8081-exec-10] INFO  c.p.carCatalog.services.CarService.addCar -An attempt to save new car to the database
+03-09-2023 19:43:01 [http-nio-8081-exec-10] INFO  c.p.carCatalog.services.ModelService.getModelById -An attempt to extract model with id  4 from database
+03-09-2023 19:43:01 [http-nio-8081-exec-10] INFO  c.p.c.services.TransmissionService.getTransmissionById -An attempt to extract transmission with id 1 from database
+03-09-2023 19:43:01 [http-nio-8081-exec-10] INFO  c.p.c.services.FuelTypeService.getFuelTypeById -An attempt to extract fuel type by id 2 from database
+03-09-2023 19:43:12 [http-nio-8081-exec-1] INFO  c.p.c.controllers.CarController.addCar -A request for car to be added has been submitted
+03-09-2023 19:43:12 [http-nio-8081-exec-1] INFO  c.p.carCatalog.services.CarService.addCar -An attempt to save new car to the database
+03-09-2023 19:43:12 [http-nio-8081-exec-1] INFO  c.p.carCatalog.services.ModelService.getModelById -An attempt to extract model with id  5 from database
+03-09-2023 19:43:12 [http-nio-8081-exec-1] INFO  c.p.c.services.TransmissionService.getTransmissionById -An attempt to extract transmission with id 1 from database
+03-09-2023 19:43:12 [http-nio-8081-exec-1] INFO  c.p.c.services.FuelTypeService.getFuelTypeById -An attempt to extract fuel type by id 2 from database
+03-09-2023 19:43:30 [http-nio-8081-exec-2] INFO  c.p.c.controllers.CarController.addCar -A request for car to be added has been submitted
+03-09-2023 19:43:30 [http-nio-8081-exec-2] INFO  c.p.carCatalog.services.CarService.addCar -An attempt to save new car to the database
+03-09-2023 19:43:30 [http-nio-8081-exec-2] INFO  c.p.carCatalog.services.ModelService.getModelById -An attempt to extract model with id  6 from database
+03-09-2023 19:43:30 [http-nio-8081-exec-2] INFO  c.p.c.services.TransmissionService.getTransmissionById -An attempt to extract transmission with id 1 from database
+03-09-2023 19:43:30 [http-nio-8081-exec-2] INFO  c.p.c.services.FuelTypeService.getFuelTypeById -An attempt to extract fuel type by id 1 from database
+03-09-2023 19:43:50 [http-nio-8081-exec-3] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 19:43:50 [http-nio-8081-exec-3] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name S from database
+03-09-2023 19:43:50 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 19:43:50 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 3 is being mapped to a dto
+03-09-2023 19:43:50 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 3 is being mapped to dto
+03-09-2023 19:43:50 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:43:50 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:43:50 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:43:57 [http-nio-8081-exec-4] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 19:43:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name M4 from database
+03-09-2023 19:43:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 19:43:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 19:43:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:43:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:43:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:43:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:44:10 [http-nio-8081-exec-5] INFO  c.p.c.controllers.CarController.addCar -A request for car to be added has been submitted
+03-09-2023 19:44:10 [http-nio-8081-exec-5] INFO  c.p.carCatalog.services.CarService.addCar -An attempt to save new car to the database
+03-09-2023 19:44:10 [http-nio-8081-exec-5] ERROR c.p.carCatalog.services.CarService.lambda$carValidation$2 -Exception caught: Car's vin number already exists
+03-09-2023 19:44:10 [http-nio-8081-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet].log -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.petkoivanov.carCatalog.exceptions.EntityAlreadyExistsException: Car's vin number already exists] with root cause
+com.petkoivanov.carCatalog.exceptions.EntityAlreadyExistsException: Car's vin number already exists
+	at com.petkoivanov.carCatalog.services.CarService.lambda$carValidation$2(CarService.java:227)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at com.petkoivanov.carCatalog.services.CarService.carValidation(CarService.java:224)
+	at com.petkoivanov.carCatalog.services.CarService.addCar(CarService.java:50)
+	at com.petkoivanov.carCatalog.controllers.CarController.addCar(CarController.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+03-09-2023 19:44:15 [http-nio-8081-exec-7] INFO  c.p.c.controllers.CarController.addCar -A request for car to be added has been submitted
+03-09-2023 19:44:15 [http-nio-8081-exec-7] INFO  c.p.carCatalog.services.CarService.addCar -An attempt to save new car to the database
+03-09-2023 19:44:15 [http-nio-8081-exec-7] INFO  c.p.carCatalog.services.ModelService.getModelById -An attempt to extract model with id  4 from database
+03-09-2023 19:44:15 [http-nio-8081-exec-7] INFO  c.p.c.services.TransmissionService.getTransmissionById -An attempt to extract transmission with id 1 from database
+03-09-2023 19:44:15 [http-nio-8081-exec-7] INFO  c.p.c.services.FuelTypeService.getFuelTypeById -An attempt to extract fuel type by id 1 from database
+03-09-2023 19:44:21 [http-nio-8081-exec-8] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 19:44:21 [http-nio-8081-exec-8] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name M4 from database
+03-09-2023 19:44:21 [http-nio-8081-exec-8] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 19:44:21 [http-nio-8081-exec-8] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 19:44:21 [http-nio-8081-exec-8] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:44:21 [http-nio-8081-exec-8] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:44:21 [http-nio-8081-exec-8] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:44:21 [http-nio-8081-exec-8] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:44:21 [http-nio-8081-exec-8] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 19:44:21 [http-nio-8081-exec-8] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:44:21 [http-nio-8081-exec-8] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:44:21 [http-nio-8081-exec-8] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:44:21 [http-nio-8081-exec-8] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:44:40 [http-nio-8081-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet].log -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Optional double parameter 'price' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+java.lang.IllegalStateException: Optional double parameter 'price' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:263)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:116)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 1 is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 1 is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 2 is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 2 is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 3 is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 3 is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 5 is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 5 is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:44:47 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 1 is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 1 is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 2 is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 2 is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 3 is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 3 is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 5 is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 5 is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:45:17 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 1 is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 1 is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 2 is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 2 is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 3 is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 3 is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 5 is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 5 is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:45:35 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:46:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy -Closing JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 19:46:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown initiated...
+03-09-2023 19:46:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown completed.
+03-09-2023 19:46:08 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarting -Starting CarCatalogApplication using Java 18.0.2.1 on DESKTOP-IE98DU3 with PID 3108 (D:\Programming\Portfolio projects\carCatalog\target\classes started by MyPC in D:\Programming\Portfolio projects\carCatalog)
+03-09-2023 19:46:08 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStartupProfileInfo -The following 1 profile is active: "postgre"
+03-09-2023 19:46:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-09-2023 19:46:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Finished Spring Data repository scanning in 86 ms. Found 5 JPA repository interfaces.
+03-09-2023 19:46:09 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$eebcac7d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+03-09-2023 19:46:10 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+03-09-2023 19:46:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize -Tomcat initialized with port(s): 8081 (http)
+03-09-2023 19:46:10 [main] INFO  o.a.catalina.core.StandardService.log -Starting service [Tomcat]
+03-09-2023 19:46:10 [main] INFO  o.a.catalina.core.StandardEngine.log -Starting Servlet engine: [Apache Tomcat/9.0.79]
+03-09-2023 19:46:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring embedded WebApplicationContext
+03-09-2023 19:46:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext -Root WebApplicationContext: initialization completed in 2111 ms
+03-09-2023 19:46:10 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation -HHH000204: Processing PersistenceUnitInfo [name: default]
+03-09-2023 19:46:10 [main] INFO  org.hibernate.Version.logVersion -HHH000412: Hibernate ORM core version 5.6.15.Final
+03-09-2023 19:46:11 [main] INFO  o.h.annotations.common.Version.<clinit> -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03-09-2023 19:46:11 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Starting...
+03-09-2023 19:46:11 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Start completed.
+03-09-2023 19:46:11 [main] INFO  org.hibernate.dialect.Dialect.<init> -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+03-09-2023 19:46:12 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-09-2023 19:46:12 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory -Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 19:46:13 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-09-2023 19:46:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start -Tomcat started on port(s): 8081 (http) with context path ''
+03-09-2023 19:46:14 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarted -Started CarCatalogApplication in 7.028 seconds (JVM running for 8.105)
+03-09-2023 19:46:32 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring DispatcherServlet 'dispatcherServlet'
+03-09-2023 19:46:32 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Initializing Servlet 'dispatcherServlet'
+03-09-2023 19:46:32 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Completed initialization in 1 ms
+03-09-2023 19:46:33 [http-nio-8081-exec-2] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 19:48:18 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool.run -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s271ms364µs100ns).
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 1 is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 1 is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 2 is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 2 is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 3 is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 3 is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 5 is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 5 is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:19 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:19 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy -Closing JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 19:48:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown initiated...
+03-09-2023 19:48:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown completed.
+03-09-2023 19:48:24 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarting -Starting CarCatalogApplication using Java 18.0.2.1 on DESKTOP-IE98DU3 with PID 6968 (D:\Programming\Portfolio projects\carCatalog\target\classes started by MyPC in D:\Programming\Portfolio projects\carCatalog)
+03-09-2023 19:48:24 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStartupProfileInfo -The following 1 profile is active: "postgre"
+03-09-2023 19:48:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-09-2023 19:48:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Finished Spring Data repository scanning in 112 ms. Found 5 JPA repository interfaces.
+03-09-2023 19:48:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5639df64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+03-09-2023 19:48:26 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+03-09-2023 19:48:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize -Tomcat initialized with port(s): 8081 (http)
+03-09-2023 19:48:27 [main] INFO  o.a.catalina.core.StandardService.log -Starting service [Tomcat]
+03-09-2023 19:48:27 [main] INFO  o.a.catalina.core.StandardEngine.log -Starting Servlet engine: [Apache Tomcat/9.0.79]
+03-09-2023 19:48:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring embedded WebApplicationContext
+03-09-2023 19:48:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext -Root WebApplicationContext: initialization completed in 2913 ms
+03-09-2023 19:48:27 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation -HHH000204: Processing PersistenceUnitInfo [name: default]
+03-09-2023 19:48:28 [main] INFO  org.hibernate.Version.logVersion -HHH000412: Hibernate ORM core version 5.6.15.Final
+03-09-2023 19:48:28 [main] INFO  o.h.annotations.common.Version.<clinit> -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03-09-2023 19:48:28 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Starting...
+03-09-2023 19:48:28 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Start completed.
+03-09-2023 19:48:28 [main] INFO  org.hibernate.dialect.Dialect.<init> -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+03-09-2023 19:48:29 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-09-2023 19:48:29 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory -Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 19:48:30 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-09-2023 19:48:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start -Tomcat started on port(s): 8081 (http) with context path ''
+03-09-2023 19:48:30 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarted -Started CarCatalogApplication in 6.881 seconds (JVM running for 7.444)
+03-09-2023 19:48:34 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring DispatcherServlet 'dispatcherServlet'
+03-09-2023 19:48:34 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Initializing Servlet 'dispatcherServlet'
+03-09-2023 19:48:34 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Completed initialization in 1 ms
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 1 is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 1 is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 2 is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 2 is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 3 is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 3 is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 5 is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 5 is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:35 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 2 is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 2 is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 3 is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 3 is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 5 is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 5 is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 1 is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 1 is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:44 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 1 is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 1 is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 2 is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 2 is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 3 is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 3 is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 5 is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 5 is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:48:55 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:49:17 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy -Closing JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 19:49:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown initiated...
+03-09-2023 19:49:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown completed.
+03-09-2023 19:49:25 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarting -Starting CarCatalogApplication using Java 18.0.2.1 on DESKTOP-IE98DU3 with PID 11228 (D:\Programming\Portfolio projects\carCatalog\target\classes started by MyPC in D:\Programming\Portfolio projects\carCatalog)
+03-09-2023 19:49:25 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStartupProfileInfo -The following 1 profile is active: "postgre"
+03-09-2023 19:49:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-09-2023 19:49:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Finished Spring Data repository scanning in 74 ms. Found 5 JPA repository interfaces.
+03-09-2023 19:49:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$eebcac7d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+03-09-2023 19:49:26 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+03-09-2023 19:49:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize -Tomcat initialized with port(s): 8081 (http)
+03-09-2023 19:49:27 [main] INFO  o.a.catalina.core.StandardService.log -Starting service [Tomcat]
+03-09-2023 19:49:27 [main] INFO  o.a.catalina.core.StandardEngine.log -Starting Servlet engine: [Apache Tomcat/9.0.79]
+03-09-2023 19:49:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring embedded WebApplicationContext
+03-09-2023 19:49:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext -Root WebApplicationContext: initialization completed in 2327 ms
+03-09-2023 19:49:28 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation -HHH000204: Processing PersistenceUnitInfo [name: default]
+03-09-2023 19:49:28 [main] INFO  org.hibernate.Version.logVersion -HHH000412: Hibernate ORM core version 5.6.15.Final
+03-09-2023 19:49:28 [main] INFO  o.h.annotations.common.Version.<clinit> -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03-09-2023 19:49:28 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Starting...
+03-09-2023 19:49:28 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Start completed.
+03-09-2023 19:49:28 [main] INFO  org.hibernate.dialect.Dialect.<init> -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+03-09-2023 19:49:29 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-09-2023 19:49:29 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory -Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 19:49:30 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-09-2023 19:49:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start -Tomcat started on port(s): 8081 (http) with context path ''
+03-09-2023 19:49:31 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarted -Started CarCatalogApplication in 6.268 seconds (JVM running for 6.902)
+03-09-2023 19:49:34 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring DispatcherServlet 'dispatcherServlet'
+03-09-2023 19:49:34 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Initializing Servlet 'dispatcherServlet'
+03-09-2023 19:49:34 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Completed initialization in 0 ms
+03-09-2023 19:49:34 [http-nio-8081-exec-2] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 19:50:23 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool.run -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s196ms676µs400ns).
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 1 is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 1 is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 2 is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 2 is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 3 is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 3 is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 5 is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 5 is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:50:23 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:50:23 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy -Closing JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 19:50:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown initiated...
+03-09-2023 19:50:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown completed.
+03-09-2023 19:50:28 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarting -Starting CarCatalogApplication using Java 18.0.2.1 on DESKTOP-IE98DU3 with PID 3336 (D:\Programming\Portfolio projects\carCatalog\target\classes started by MyPC in D:\Programming\Portfolio projects\carCatalog)
+03-09-2023 19:50:28 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStartupProfileInfo -The following 1 profile is active: "postgre"
+03-09-2023 19:50:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-09-2023 19:50:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Finished Spring Data repository scanning in 60 ms. Found 5 JPA repository interfaces.
+03-09-2023 19:50:29 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5639df64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+03-09-2023 19:50:29 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+03-09-2023 19:50:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize -Tomcat initialized with port(s): 8081 (http)
+03-09-2023 19:50:29 [main] INFO  o.a.catalina.core.StandardService.log -Starting service [Tomcat]
+03-09-2023 19:50:29 [main] INFO  o.a.catalina.core.StandardEngine.log -Starting Servlet engine: [Apache Tomcat/9.0.79]
+03-09-2023 19:50:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring embedded WebApplicationContext
+03-09-2023 19:50:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext -Root WebApplicationContext: initialization completed in 1744 ms
+03-09-2023 19:50:30 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation -HHH000204: Processing PersistenceUnitInfo [name: default]
+03-09-2023 19:50:30 [main] INFO  org.hibernate.Version.logVersion -HHH000412: Hibernate ORM core version 5.6.15.Final
+03-09-2023 19:50:30 [main] INFO  o.h.annotations.common.Version.<clinit> -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03-09-2023 19:50:30 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Starting...
+03-09-2023 19:50:30 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Start completed.
+03-09-2023 19:50:30 [main] INFO  org.hibernate.dialect.Dialect.<init> -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+03-09-2023 19:50:31 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-09-2023 19:50:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory -Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 19:50:32 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-09-2023 19:50:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start -Tomcat started on port(s): 8081 (http) with context path ''
+03-09-2023 19:50:33 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarted -Started CarCatalogApplication in 5.33 seconds (JVM running for 5.798)
+03-09-2023 19:50:37 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring DispatcherServlet 'dispatcherServlet'
+03-09-2023 19:50:37 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Initializing Servlet 'dispatcherServlet'
+03-09-2023 19:50:37 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Completed initialization in 1 ms
+03-09-2023 19:50:37 [http-nio-8081-exec-2] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 19:50:37 [http-nio-8081-exec-2] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name M4 from database
+03-09-2023 19:50:37 [http-nio-8081-exec-2] INFO  c.p.c.services.TransmissionService.getTransmissionByName -An attempt to extract transmission with name Manual from database
+03-09-2023 19:50:37 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 19:51:10 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy -Closing JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 19:51:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown initiated...
+03-09-2023 19:51:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown completed.
+03-09-2023 19:51:13 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarting -Starting CarCatalogApplication using Java 18.0.2.1 on DESKTOP-IE98DU3 with PID 12156 (D:\Programming\Portfolio projects\carCatalog\target\classes started by MyPC in D:\Programming\Portfolio projects\carCatalog)
+03-09-2023 19:51:13 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStartupProfileInfo -The following 1 profile is active: "postgre"
+03-09-2023 19:51:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-09-2023 19:51:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Finished Spring Data repository scanning in 66 ms. Found 5 JPA repository interfaces.
+03-09-2023 19:51:14 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$eebcac7d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+03-09-2023 19:51:15 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+03-09-2023 19:51:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize -Tomcat initialized with port(s): 8081 (http)
+03-09-2023 19:51:15 [main] INFO  o.a.catalina.core.StandardService.log -Starting service [Tomcat]
+03-09-2023 19:51:15 [main] INFO  o.a.catalina.core.StandardEngine.log -Starting Servlet engine: [Apache Tomcat/9.0.79]
+03-09-2023 19:51:15 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring embedded WebApplicationContext
+03-09-2023 19:51:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext -Root WebApplicationContext: initialization completed in 2112 ms
+03-09-2023 19:51:16 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation -HHH000204: Processing PersistenceUnitInfo [name: default]
+03-09-2023 19:51:16 [main] INFO  org.hibernate.Version.logVersion -HHH000412: Hibernate ORM core version 5.6.15.Final
+03-09-2023 19:51:16 [main] INFO  o.h.annotations.common.Version.<clinit> -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03-09-2023 19:51:16 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Starting...
+03-09-2023 19:51:17 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Start completed.
+03-09-2023 19:51:17 [main] INFO  org.hibernate.dialect.Dialect.<init> -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+03-09-2023 19:51:17 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-09-2023 19:51:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory -Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 19:51:18 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-09-2023 19:51:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start -Tomcat started on port(s): 8081 (http) with context path ''
+03-09-2023 19:51:19 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarted -Started CarCatalogApplication in 5.926 seconds (JVM running for 6.506)
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring DispatcherServlet 'dispatcherServlet'
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Initializing Servlet 'dispatcherServlet'
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Completed initialization in 1 ms
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 2 is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 2 is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 3 is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 3 is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 5 is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 5 is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 1 is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 1 is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 19:51:19 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 19:51:40 [http-nio-8081-exec-2] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 19:51:57 [http-nio-8081-exec-2] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name M4 from database
+03-09-2023 19:52:05 [http-nio-8081-exec-2] INFO  c.p.c.services.TransmissionService.getTransmissionByName -An attempt to extract transmission with name Manual from database
+03-09-2023 19:52:38 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool.run -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s378ms113µs400ns).
+03-09-2023 19:52:38 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 19:52:38 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy -Closing JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 19:52:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown initiated...
+03-09-2023 19:52:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown completed.
+03-09-2023 19:59:40 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarting -Starting CarCatalogApplication using Java 18.0.2.1 on DESKTOP-IE98DU3 with PID 15900 (D:\Programming\Portfolio projects\carCatalog\target\classes started by MyPC in D:\Programming\Portfolio projects\carCatalog)
+03-09-2023 19:59:40 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStartupProfileInfo -The following 1 profile is active: "postgre"
+03-09-2023 19:59:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-09-2023 19:59:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Finished Spring Data repository scanning in 61 ms. Found 5 JPA repository interfaces.
+03-09-2023 19:59:41 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5639df64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+03-09-2023 19:59:41 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+03-09-2023 19:59:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize -Tomcat initialized with port(s): 8081 (http)
+03-09-2023 19:59:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext -Root WebApplicationContext: initialization completed in 1788 ms
+03-09-2023 19:59:42 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation -HHH000204: Processing PersistenceUnitInfo [name: default]
+03-09-2023 19:59:42 [main] INFO  org.hibernate.Version.logVersion -HHH000412: Hibernate ORM core version 5.6.15.Final
+03-09-2023 19:59:42 [main] INFO  o.h.annotations.common.Version.<clinit> -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03-09-2023 19:59:42 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Starting...
+03-09-2023 19:59:42 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Start completed.
+03-09-2023 19:59:42 [main] INFO  org.hibernate.dialect.Dialect.<init> -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+03-09-2023 19:59:43 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-09-2023 19:59:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory -Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 19:59:44 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-09-2023 19:59:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start -Tomcat started on port(s): 8081 (http) with context path ''
+03-09-2023 19:59:44 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarted -Started CarCatalogApplication in 5.029 seconds (JVM running for 5.483)
+03-09-2023 19:59:44 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy -Closing JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 19:59:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown initiated...
+03-09-2023 19:59:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown completed.
+03-09-2023 20:12:19 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarting -Starting CarCatalogApplication using Java 18.0.2.1 on DESKTOP-IE98DU3 with PID 12804 (D:\Programming\Portfolio projects\carCatalog\target\classes started by MyPC in D:\Programming\Portfolio projects\carCatalog)
+03-09-2023 20:12:19 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStartupProfileInfo -The following 1 profile is active: "postgre"
+03-09-2023 20:12:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-09-2023 20:12:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Finished Spring Data repository scanning in 69 ms. Found 5 JPA repository interfaces.
+03-09-2023 20:12:21 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5639df64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+03-09-2023 20:12:21 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+03-09-2023 20:12:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize -Tomcat initialized with port(s): 8081 (http)
+03-09-2023 20:12:21 [main] INFO  o.a.catalina.core.StandardService.log -Starting service [Tomcat]
+03-09-2023 20:12:21 [main] INFO  o.a.catalina.core.StandardEngine.log -Starting Servlet engine: [Apache Tomcat/9.0.79]
+03-09-2023 20:12:21 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring embedded WebApplicationContext
+03-09-2023 20:12:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext -Root WebApplicationContext: initialization completed in 1870 ms
+03-09-2023 20:12:22 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation -HHH000204: Processing PersistenceUnitInfo [name: default]
+03-09-2023 20:12:22 [main] INFO  org.hibernate.Version.logVersion -HHH000412: Hibernate ORM core version 5.6.15.Final
+03-09-2023 20:12:22 [main] INFO  o.h.annotations.common.Version.<clinit> -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03-09-2023 20:12:22 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Starting...
+03-09-2023 20:12:22 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Start completed.
+03-09-2023 20:12:22 [main] INFO  org.hibernate.dialect.Dialect.<init> -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+03-09-2023 20:12:23 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-09-2023 20:12:23 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory -Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 20:12:24 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-09-2023 20:12:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start -Tomcat started on port(s): 8081 (http) with context path ''
+03-09-2023 20:12:24 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarted -Started CarCatalogApplication in 5.606 seconds (JVM running for 6.091)
+03-09-2023 20:12:29 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring DispatcherServlet 'dispatcherServlet'
+03-09-2023 20:12:29 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Initializing Servlet 'dispatcherServlet'
+03-09-2023 20:12:29 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Completed initialization in 1 ms
+03-09-2023 20:12:29 [http-nio-8081-exec-1] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:12:29 [http-nio-8081-exec-1] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name SLR from database
+03-09-2023 20:12:29 [http-nio-8081-exec-1] INFO  c.p.c.services.TransmissionService.getTransmissionByName -An attempt to extract transmission with name Manual from database
+03-09-2023 20:12:29 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 1 is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 1 is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 2 is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 2 is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 3 is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 3 is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 5 is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 5 is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:12:46 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 1 is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 1 is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 2 is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 2 is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 3 is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 3 is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 5 is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 5 is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:12:57 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 2 is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 2 is being mapped to dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 3 is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 3 is being mapped to dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 5 is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 5 is being mapped to dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:13:11 [http-nio-8081-exec-5] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:13:21 [http-nio-8081-exec-6] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:13:21 [http-nio-8081-exec-6] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:13:39 [http-nio-8081-exec-7] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:13:39 [http-nio-8081-exec-7] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name SLR from database
+03-09-2023 20:13:39 [http-nio-8081-exec-7] INFO  c.p.c.services.FuelTypeService.getFuelTypeByName -An attempt to extract fuel type by name Gas from database
+03-09-2023 20:13:39 [http-nio-8081-exec-7] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:13:45 [http-nio-8081-exec-8] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:13:45 [http-nio-8081-exec-8] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name SLR from database
+03-09-2023 20:13:45 [http-nio-8081-exec-8] INFO  c.p.c.services.FuelTypeService.getFuelTypeByName -An attempt to extract fuel type by name Disel from database
+03-09-2023 20:13:45 [http-nio-8081-exec-8] ERROR c.p.c.services.FuelTypeService.lambda$getFuelTypeByName$3 -Exception caught: No such fuel type found in the database
+03-09-2023 20:13:45 [http-nio-8081-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet].log -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.petkoivanov.carCatalog.exceptions.EntityNotFoundException: No such fuel type found in the database] with root cause
+com.petkoivanov.carCatalog.exceptions.EntityNotFoundException: No such fuel type found in the database
+	at com.petkoivanov.carCatalog.services.FuelTypeService.lambda$getFuelTypeByName$3(FuelTypeService.java:84)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.petkoivanov.carCatalog.services.FuelTypeService.getFuelTypeByName(FuelTypeService.java:81)
+	at com.petkoivanov.carCatalog.services.CarService.getAllByModelIdAndFuelTypeId(CarService.java:241)
+	at com.petkoivanov.carCatalog.services.CarService.getAllByFilter(CarService.java:142)
+	at com.petkoivanov.carCatalog.controllers.CarController.getCarsByFilter(CarController.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+03-09-2023 20:14:21 [http-nio-8081-exec-10] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:14:21 [http-nio-8081-exec-10] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name SLR from database
+03-09-2023 20:14:21 [http-nio-8081-exec-10] INFO  c.p.c.services.FuelTypeService.getFuelTypeByName -An attempt to extract fuel type by name Diesel from database
+03-09-2023 20:14:21 [http-nio-8081-exec-10] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:14:21 [http-nio-8081-exec-10] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 2 is being mapped to a dto
+03-09-2023 20:14:21 [http-nio-8081-exec-10] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 2 is being mapped to dto
+03-09-2023 20:14:21 [http-nio-8081-exec-10] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 20:14:21 [http-nio-8081-exec-10] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 20:14:21 [http-nio-8081-exec-10] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:14:31 [http-nio-8081-exec-2] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:14:31 [http-nio-8081-exec-2] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name M4 from database
+03-09-2023 20:14:31 [http-nio-8081-exec-2] INFO  c.p.c.services.FuelTypeService.getFuelTypeByName -An attempt to extract fuel type by name Diesel from database
+03-09-2023 20:14:31 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:14:31 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 20:14:31 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 20:14:31 [http-nio-8081-exec-2] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:14:31 [http-nio-8081-exec-2] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:14:31 [http-nio-8081-exec-2] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:14:37 [http-nio-8081-exec-1] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:14:37 [http-nio-8081-exec-1] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name M4 from database
+03-09-2023 20:14:37 [http-nio-8081-exec-1] INFO  c.p.c.services.FuelTypeService.getFuelTypeByName -An attempt to extract fuel type by name Gas from database
+03-09-2023 20:14:37 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:14:37 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 20:14:37 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 20:14:37 [http-nio-8081-exec-1] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:14:37 [http-nio-8081-exec-1] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:14:37 [http-nio-8081-exec-1] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 20:14:43 [http-nio-8081-exec-3] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:14:43 [http-nio-8081-exec-3] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name M4 from database
+03-09-2023 20:14:43 [http-nio-8081-exec-3] INFO  c.p.c.services.FuelTypeService.getFuelTypeByName -An attempt to extract fuel type by name Gas from database
+03-09-2023 20:14:43 [http-nio-8081-exec-3] INFO  c.p.c.services.TransmissionService.getTransmissionByName -An attempt to extract transmission with name Manual from database
+03-09-2023 20:14:43 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:14:43 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 20:14:43 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 20:14:43 [http-nio-8081-exec-3] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:14:43 [http-nio-8081-exec-3] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:14:43 [http-nio-8081-exec-3] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 20:14:50 [http-nio-8081-exec-4] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:14:50 [http-nio-8081-exec-4] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name M4 from database
+03-09-2023 20:14:50 [http-nio-8081-exec-4] INFO  c.p.c.services.FuelTypeService.getFuelTypeByName -An attempt to extract fuel type by name Diesel from database
+03-09-2023 20:14:50 [http-nio-8081-exec-4] INFO  c.p.c.services.TransmissionService.getTransmissionByName -An attempt to extract transmission with name Manual from database
+03-09-2023 20:14:50 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:14:50 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 20:14:50 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 20:14:50 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:14:50 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:14:50 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:14:58 [http-nio-8081-exec-5] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:14:58 [http-nio-8081-exec-5] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name SpaceStar from database
+03-09-2023 20:14:58 [http-nio-8081-exec-5] INFO  c.p.c.services.FuelTypeService.getFuelTypeByName -An attempt to extract fuel type by name Diesel from database
+03-09-2023 20:14:58 [http-nio-8081-exec-5] INFO  c.p.c.services.TransmissionService.getTransmissionByName -An attempt to extract transmission with name Manual from database
+03-09-2023 20:14:58 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:14:58 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 20:14:58 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 20:14:58 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 20:14:58 [http-nio-8081-exec-5] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:14:58 [http-nio-8081-exec-5] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:15:09 [http-nio-8081-exec-6] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:15:09 [http-nio-8081-exec-6] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name SpaceStar from database
+03-09-2023 20:15:09 [http-nio-8081-exec-6] INFO  c.p.c.services.FuelTypeService.getFuelTypeByName -An attempt to extract fuel type by name Diesel from database
+03-09-2023 20:15:09 [http-nio-8081-exec-6] INFO  c.p.c.services.TransmissionService.getTransmissionByName -An attempt to extract transmission with name Manual from database
+03-09-2023 20:15:09 [http-nio-8081-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet].log -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: Parameter value [500.0] did not match expected type [java.lang.Integer (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [500.0] did not match expected type [java.lang.Integer (n/a)]] with root cause
+java.lang.IllegalArgumentException: Parameter value [500.0] did not match expected type [java.lang.Integer (n/a)]
+	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:54)
+	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:27)
+	at org.hibernate.query.internal.QueryParameterBindingImpl.validate(QueryParameterBindingImpl.java:90)
+	at org.hibernate.query.internal.QueryParameterBindingImpl.setBindValue(QueryParameterBindingImpl.java:55)
+	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:501)
+	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:122)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.setParameter(CriteriaQueryTypeQueryAdapter.java:393)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.setParameter(CriteriaQueryTypeQueryAdapter.java:61)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$BindableQuery.setParameter(QueryParameterSetter.java:327)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.lambda$setParameter$3(QueryParameterSetter.java:124)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$ErrorHandling$1.execute(QueryParameterSetter.java:149)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.setParameter(QueryParameterSetter.java:124)
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:82)
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:74)
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bindAndPrepare(ParameterBinder.java:96)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery$QueryPreparer.invokeBinding(PartTreeJpaQuery.java:324)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery$QueryPreparer.createQuery(PartTreeJpaQuery.java:243)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.doCreateQuery(PartTreeJpaQuery.java:106)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.createQuery(AbstractJpaQuery.java:233)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:76)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.findByModelIdAndFuelTypeIdAndTransmissionIdAndPriceLessThan(Unknown Source)
+	at com.petkoivanov.carCatalog.services.CarService.getAllByFilter(CarService.java:161)
+	at com.petkoivanov.carCatalog.controllers.CarController.getCarsByFilter(CarController.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+03-09-2023 20:15:27 [http-nio-8081-exec-8] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:15:27 [http-nio-8081-exec-8] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name SpaceStar from database
+03-09-2023 20:15:27 [http-nio-8081-exec-8] INFO  c.p.c.services.FuelTypeService.getFuelTypeByName -An attempt to extract fuel type by name Diesel from database
+03-09-2023 20:15:27 [http-nio-8081-exec-8] INFO  c.p.c.services.TransmissionService.getTransmissionByName -An attempt to extract transmission with name Manual from database
+03-09-2023 20:15:27 [http-nio-8081-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet].log -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: Parameter value [500.0] did not match expected type [java.lang.Integer (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [500.0] did not match expected type [java.lang.Integer (n/a)]] with root cause
+java.lang.IllegalArgumentException: Parameter value [500.0] did not match expected type [java.lang.Integer (n/a)]
+	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:54)
+	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:27)
+	at org.hibernate.query.internal.QueryParameterBindingImpl.validate(QueryParameterBindingImpl.java:90)
+	at org.hibernate.query.internal.QueryParameterBindingImpl.setBindValue(QueryParameterBindingImpl.java:55)
+	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:501)
+	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:122)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.setParameter(CriteriaQueryTypeQueryAdapter.java:393)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.setParameter(CriteriaQueryTypeQueryAdapter.java:61)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$BindableQuery.setParameter(QueryParameterSetter.java:327)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.lambda$setParameter$3(QueryParameterSetter.java:124)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$ErrorHandling$1.execute(QueryParameterSetter.java:149)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.setParameter(QueryParameterSetter.java:124)
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:82)
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:74)
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bindAndPrepare(ParameterBinder.java:96)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery$QueryPreparer.invokeBinding(PartTreeJpaQuery.java:324)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery$QueryPreparer.createQuery(PartTreeJpaQuery.java:243)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.doCreateQuery(PartTreeJpaQuery.java:106)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.createQuery(AbstractJpaQuery.java:233)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:76)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.findByModelIdAndFuelTypeIdAndTransmissionIdAndPriceLessThan(Unknown Source)
+	at com.petkoivanov.carCatalog.services.CarService.getAllByFilter(CarService.java:161)
+	at com.petkoivanov.carCatalog.controllers.CarController.getCarsByFilter(CarController.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+03-09-2023 20:16:45 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy -Closing JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 20:16:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown initiated...
+03-09-2023 20:16:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown completed.
+03-09-2023 20:16:49 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarting -Starting CarCatalogApplication using Java 18.0.2.1 on DESKTOP-IE98DU3 with PID 21852 (D:\Programming\Portfolio projects\carCatalog\target\classes started by MyPC in D:\Programming\Portfolio projects\carCatalog)
+03-09-2023 20:16:49 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStartupProfileInfo -The following 1 profile is active: "postgre"
+03-09-2023 20:16:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-09-2023 20:16:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn -Finished Spring Data repository scanning in 63 ms. Found 5 JPA repository interfaces.
+03-09-2023 20:16:51 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$36aa4f41] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+03-09-2023 20:16:51 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+03-09-2023 20:16:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize -Tomcat initialized with port(s): 8081 (http)
+03-09-2023 20:16:51 [main] INFO  o.a.catalina.core.StandardService.log -Starting service [Tomcat]
+03-09-2023 20:16:51 [main] INFO  o.a.catalina.core.StandardEngine.log -Starting Servlet engine: [Apache Tomcat/9.0.79]
+03-09-2023 20:16:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring embedded WebApplicationContext
+03-09-2023 20:16:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext -Root WebApplicationContext: initialization completed in 1669 ms
+03-09-2023 20:16:51 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation -HHH000204: Processing PersistenceUnitInfo [name: default]
+03-09-2023 20:16:51 [main] INFO  org.hibernate.Version.logVersion -HHH000412: Hibernate ORM core version 5.6.15.Final
+03-09-2023 20:16:52 [main] INFO  o.h.annotations.common.Version.<clinit> -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03-09-2023 20:16:52 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Starting...
+03-09-2023 20:16:52 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection -HikariPool-1 - Start completed.
+03-09-2023 20:16:52 [main] INFO  org.hibernate.dialect.Dialect.<init> -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+03-09-2023 20:16:53 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-09-2023 20:16:53 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory -Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 20:16:53 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-09-2023 20:16:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start -Tomcat started on port(s): 8081 (http) with context path ''
+03-09-2023 20:16:54 [main] INFO  c.p.carCatalog.CarCatalogApplication.logStarted -Started CarCatalogApplication in 4.642 seconds (JVM running for 5.071)
+03-09-2023 20:17:04 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log -Initializing Spring DispatcherServlet 'dispatcherServlet'
+03-09-2023 20:17:04 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Initializing Servlet 'dispatcherServlet'
+03-09-2023 20:17:04 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean -Completed initialization in 0 ms
+03-09-2023 20:17:04 [http-nio-8081-exec-1] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:17:04 [http-nio-8081-exec-1] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name SpaceStar from database
+03-09-2023 20:17:04 [http-nio-8081-exec-1] INFO  c.p.c.services.FuelTypeService.getFuelTypeByName -An attempt to extract fuel type by name Diesel from database
+03-09-2023 20:17:04 [http-nio-8081-exec-1] INFO  c.p.c.services.TransmissionService.getTransmissionByName -An attempt to extract transmission with name Manual from database
+03-09-2023 20:17:04 [http-nio-8081-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet].log -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: Parameter value [500.0] did not match expected type [java.lang.Integer (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [500.0] did not match expected type [java.lang.Integer (n/a)]] with root cause
+java.lang.IllegalArgumentException: Parameter value [500.0] did not match expected type [java.lang.Integer (n/a)]
+	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:54)
+	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:27)
+	at org.hibernate.query.internal.QueryParameterBindingImpl.validate(QueryParameterBindingImpl.java:90)
+	at org.hibernate.query.internal.QueryParameterBindingImpl.setBindValue(QueryParameterBindingImpl.java:55)
+	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:501)
+	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:122)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.setParameter(CriteriaQueryTypeQueryAdapter.java:393)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.setParameter(CriteriaQueryTypeQueryAdapter.java:61)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$BindableQuery.setParameter(QueryParameterSetter.java:327)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.lambda$setParameter$3(QueryParameterSetter.java:124)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$ErrorHandling$1.execute(QueryParameterSetter.java:149)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.setParameter(QueryParameterSetter.java:124)
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:82)
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:74)
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bindAndPrepare(ParameterBinder.java:96)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery$QueryPreparer.invokeBinding(PartTreeJpaQuery.java:324)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery$QueryPreparer.createQuery(PartTreeJpaQuery.java:243)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.doCreateQuery(PartTreeJpaQuery.java:106)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.createQuery(AbstractJpaQuery.java:233)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:76)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.findByModelIdAndFuelTypeIdAndTransmissionIdAndPriceLessThan(Unknown Source)
+	at com.petkoivanov.carCatalog.services.CarService.getAllByFilter(CarService.java:161)
+	at com.petkoivanov.carCatalog.controllers.CarController.getCarsByFilter(CarController.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 1 is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 1 is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 2 is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 2 is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 3 is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 3 is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mercedes is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Automatic is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 4 is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 5 is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 5 is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Gas is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 7 is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 4 is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  BMW is being mapped to a dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:17:12 [http-nio-8081-exec-4] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:17:27 [http-nio-8081-exec-5] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:17:27 [http-nio-8081-exec-5] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name SpaceStar from database
+03-09-2023 20:17:27 [http-nio-8081-exec-5] INFO  c.p.c.services.FuelTypeService.getFuelTypeByName -An attempt to extract fuel type by name Diesel from database
+03-09-2023 20:17:27 [http-nio-8081-exec-5] INFO  c.p.c.services.TransmissionService.getTransmissionByName -An attempt to extract transmission with name Manual from database
+03-09-2023 20:17:27 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:17:27 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDto -Car with id 6 is being mapped to a dto
+03-09-2023 20:17:27 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.ModelMapper.mapModelToModelDto -Model with id 6 is being mapped to dto
+03-09-2023 20:17:27 [http-nio-8081-exec-5] INFO  c.p.carCatalog.mappers.BrandMapper.mapBrandToBrandDto -Brand  Mitsubishi is being mapped to a dto
+03-09-2023 20:17:27 [http-nio-8081-exec-5] INFO  c.p.c.mappers.TransmissionMapper.mapTransmissionToTransmissionDto -Transmission with name Manual is being mapped to dto
+03-09-2023 20:17:27 [http-nio-8081-exec-5] INFO  c.p.c.mappers.FuelTypeMapper.mapFuelTypeToFuelTypeDto -The fuelType Diesel is being mapped to a dto
+03-09-2023 20:18:06 [http-nio-8081-exec-6] INFO  c.p.c.controllers.CarController.getCarsByFilter -Requesting all cars with the applied filter(s) from database
+03-09-2023 20:18:06 [http-nio-8081-exec-6] INFO  c.p.carCatalog.services.ModelService.getModelByName -An attempt to extract model with name SpaceStar from database
+03-09-2023 20:18:06 [http-nio-8081-exec-6] INFO  c.p.c.services.TransmissionService.getTransmissionByName -An attempt to extract transmission with name Manual from database
+03-09-2023 20:18:06 [http-nio-8081-exec-6] INFO  c.p.carCatalog.mappers.BrandMapper.mapCarToCarDtoList -Car list is being mapped to dto
+03-09-2023 20:19:09 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy -Closing JPA EntityManagerFactory for persistence unit 'default'
+03-09-2023 20:19:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown initiated...
+03-09-2023 20:19:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close -HikariPool-1 - Shutdown completed.

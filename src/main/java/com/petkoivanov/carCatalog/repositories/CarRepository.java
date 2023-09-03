@@ -13,12 +13,12 @@ public interface CarRepository extends JpaRepository<Car , Integer> {
   Optional<Car> findByRegistrationDate(LocalDate regDate);
   List<Car> findAllByModelId(int id);
   List<Car> findAllByFuelTypeId(int id);
+  List<Car> findAllByTransmissionId(int id);
   List<Car> findAllByOrderByPriceAsc();
   List<Car> findAllByOrderByPriceDesc();
   List<Car> findAlLByPriceGreaterThan(double price);
   List<Car> findAllByPriceLessThan(double price);
-  List<Car> findAllByTransmissionId(int id);
-  List<Car> findAllByTransmissionIdAndModelId(int transmissionId , int modelId);
+  List<Car> findAllByModelIdAndTransmissionId(int transmissionId , int modelId);
   List<Car> findAllByTransmissionIdAndFuelTypeId(int transmissionId , int fuelTypeId);
   List<Car> findAllByModelIdAndFuelTypeId(int modelId , int fuelTypeId);
   List<Car> findAllByModelIdAndFuelTypeIdAndTransmissionId(int modelId,int fuelTypeId,int transmissionId);
