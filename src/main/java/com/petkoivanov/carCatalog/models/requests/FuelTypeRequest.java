@@ -12,8 +12,6 @@ import javax.validation.constraints.Pattern;
 @NoArgsConstructor
 @Data
 public class FuelTypeRequest {
-  @Pattern(regexp = "^[A-Z][A-Za-z-, .]*$]" ,
-           message = "Fuel type must start with capital letter and not contain numbers")
   @NotNull(message = "Can't be null")
   @NotBlank(message = "Can't be blank")
   private String fuelName;

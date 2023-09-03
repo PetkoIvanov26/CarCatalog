@@ -12,7 +12,6 @@ import javax.validation.constraints.Pattern;
 @NoArgsConstructor
 @Data
 public class TransmissionRequest {
-  @Pattern(regexp = "^[A-Z0-9][A-Z0-9a-z]*$")
   @NotNull
   @NotBlank
   private String transmissionName;

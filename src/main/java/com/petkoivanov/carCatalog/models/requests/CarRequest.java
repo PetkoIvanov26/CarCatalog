@@ -15,8 +15,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Data
 public class CarRequest {
-  @Pattern(regexp = "^[A-Z0-9]*$" ,
-           message = "There must be no lowercase letters")
+  @NotBlank
   @NotNull(message = "vin number can't be empty")
   private String vinNumber;
 

@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Positive;
@@ -12,7 +13,7 @@ import javax.validation.constraints.Positive;
 @NoArgsConstructor
 @Data
 public class ModelRequest {
-  @Pattern(regexp = "^[A-Z0-9a-z]*$")
+  @NotBlank
   @NotNull
   private String modelName;
 

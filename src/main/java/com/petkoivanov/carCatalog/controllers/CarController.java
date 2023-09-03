@@ -38,19 +38,6 @@ public class CarController {
     this.carService = carService;
   }
 
-  @PostMapping(CARS_PATH)
-  public ResponseEntity<Void> addCar(@RequestBody @Valid CarRequest carRequest){
-    log.info("A request for a car to be added was submitted");
-    Car car = carService.addCar(carRequest);
-
-    URI location = UriComponentsBuilder
-      .fromUriString(CARS_ID_PATH)
-      .buildAndExpand(car.getId())
-      .toUri();
-
-    return ResponseEntity.created(location).build();
-  }
-
   @GetMapping(CARS_PATH)
   public ResponseEntity<List<CarDto>> getCarsByFilter(
     @RequestParam(required = false) String modelName,
