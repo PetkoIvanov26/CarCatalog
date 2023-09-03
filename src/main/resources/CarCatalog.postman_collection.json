@@ -1,0 +1,663 @@
+{
+	"info": {
+		"_postman_id": "46a8c70f-2d6c-43a8-8969-c68051def4a3",
+		"name": "CarCatalog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26980369"
+	},
+	"item": [
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "Brand",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brandName\": \"BMW\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/brands",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Brands",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/brands",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BrandByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/brands?brandName",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"brands"
+							],
+							"query": [
+								{
+									"key": "brandName",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Brand",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brandName\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/brand/1?returnOld=true",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"brand",
+								"1"
+							],
+							"query": [
+								{
+									"key": "returnOld",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Brand",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/brands/1?retrunOld=true",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"brands",
+								"1"
+							],
+							"query": [
+								{
+									"key": "retrunOld",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Car",
+			"item": [
+				{
+					"name": "Car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vinNumber\":\"2001\",\r\n    \"modelId\":\"1\",\r\n    \"price\":200.99,\r\n    \"registrationDate\":\"2023-09-03\",\r\n    \"transmissionId\":\"1\",\r\n    \"fuelTypeId\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/cars",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/cars?modelName=GT3&transmissionName=Manual&fuelTypeName=Diesel&price=0.0&isAsc=true&isDesc=true&isGreaterThan=true&isLowerThan=true",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cars"
+							],
+							"query": [
+								{
+									"key": "modelName",
+									"value": "GT3"
+								},
+								{
+									"key": "transmissionName",
+									"value": "Manual"
+								},
+								{
+									"key": "fuelTypeName",
+									"value": "Diesel"
+								},
+								{
+									"key": "price",
+									"value": "0.0"
+								},
+								{
+									"key": "isAsc",
+									"value": "true"
+								},
+								{
+									"key": "isDesc",
+									"value": "true"
+								},
+								{
+									"key": "isGreaterThan",
+									"value": "true"
+								},
+								{
+									"key": "isLowerThan",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cars",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vinNumber\":\"\",\r\n    \"modelId\":\"\",\r\n    \"price\":\"\",\r\n    \"registrationDate\":\"\",\r\n    \"transmissionId\":\"\",\r\n    \"fuelTypeId\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/cars/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cars",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/cars/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cars",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Model",
+			"item": [
+				{
+					"name": "Models",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"modelName\":\"\",\r\n    \"brandId\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/models",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"models"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Models",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/models",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"models"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Models By Brand Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/models/brands/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"models",
+								"brands",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Models By Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/models?modelName",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"models"
+							],
+							"query": [
+								{
+									"key": "modelName",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Models",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"modelName\":\"\",\r\n    \"brandId\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/models/1?returnOld=true",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"models",
+								"1"
+							],
+							"query": [
+								{
+									"key": "returnOld",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Models",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/models/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"models",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FuelType",
+			"item": [
+				{
+					"name": "Fuel Type",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fuelName\":\"Diesel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/fuelTypes",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"fuelTypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fuel Types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/fuelTypes",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"fuelTypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fuel Type By Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/fuelTypes?fuelTypeName",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"fuelTypes"
+							],
+							"query": [
+								{
+									"key": "fuelTypeName",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FuelType",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fuelTypeName\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/fuelTypes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"fuelTypes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fuel Type",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/fuelType/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"fuelType",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transmission",
+			"item": [
+				{
+					"name": "Transmission",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transmissionName\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/transmissions",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"transmissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transmisssions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/transmissions",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"transmissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transmission by Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/transmissions?transmissionName",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"transmissions"
+							],
+							"query": [
+								{
+									"key": "transmissionName",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transmission",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transmissionName\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/transmission/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"transmission",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transmission",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/transmissions/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"transmissions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
