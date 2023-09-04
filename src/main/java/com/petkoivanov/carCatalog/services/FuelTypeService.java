@@ -42,7 +42,7 @@ public class FuelTypeService {
   public List<FuelTypeDto> getAllFuelTypes(){
     log.info("An attempt to extract all fuel types from database");
 
-    return fuelTypeMapper.mapFuelTypeToFuelDtoTypeList(fuelTypeRepository.findAll());
+    return fuelTypeMapper.mapFuelTypeToFuelTypeDtoList(fuelTypeRepository.findAll());
   }
 
   public FuelTypeDto getFuelTypeDtoById(int id){

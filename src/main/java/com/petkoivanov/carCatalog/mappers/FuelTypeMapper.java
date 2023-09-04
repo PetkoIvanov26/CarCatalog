@@ -19,7 +19,7 @@ public class FuelTypeMapper {
     return new FuelTypeDto(fuelType.getName());
   }
 
-  public List<FuelTypeDto> mapFuelTypeToFuelDtoTypeList(List<FuelType> fuelTypes) {
+  public List<FuelTypeDto> mapFuelTypeToFuelTypeDtoList(List<FuelType> fuelTypes) {
     log.info("FuelType list is being mapped to dto");
     return fuelTypes.stream()
                     .map(this::mapFuelTypeToFuelTypeDto)
