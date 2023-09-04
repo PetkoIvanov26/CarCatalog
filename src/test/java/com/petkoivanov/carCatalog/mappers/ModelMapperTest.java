@@ -11,6 +11,7 @@ import java.util.List;
 
 import static com.petkoivanov.carCatalog.testUtils.constants.ModelConstants.NAME;
 import static com.petkoivanov.carCatalog.testUtils.factories.BrandFactory.getDefaultBrandDto;
+import static com.petkoivanov.carCatalog.testUtils.factories.ModelFactory.getDefaultModel;
 import static com.petkoivanov.carCatalog.testUtils.factories.ModelFactory.getDefaultModelList;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -33,6 +34,16 @@ public class ModelMapperTest {
 
     ModelDto modelDto = models.get(0);
 
+    assertEquals(modelDto.getModelName() , NAME);
+    assertEquals(modelDto.getBrand(), getDefaultBrandDto());
+  }
+
+  @Test
+  public void testMapModelToModelDto_success(){
+    when(brandMapper.mapBrandToBrandDto(any())).thenReturn(getDefaultBrandDto());
+
+    ModelDto modelDto = modelMapper.mapModelToModelDto(getDefaultModel());
+    
     assertEquals(modelDto.getModelName() , NAME);
     assertEquals(modelDto.getBrand(), getDefaultBrandDto());
   }
